@@ -371,6 +371,36 @@ body {
     width: 580px;
 }
 
+.footer {
+    display: flex;
+    height: 190px;
+    width: 100%;
+    background-color: #030303;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    width: 584px;
+    margin-left: 553px;
+}
+
+.footer__item {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 46px;
+    color: #c5c5c5;
+    font-size: 12px;
+    font-family: "HelveticaNeueCyr";
+    border-bottom: 2px solid transparent;
+    padding-top: 12px;
+}
+
+.footer__item:hover {
+    border-bottom: 2px solid #f23005;
+    padding-top: 12px;
+}
+
 @font-face {
     font-family: "Myriad Pro";
     src: url("fonts/8143.otf") format("truetype");
