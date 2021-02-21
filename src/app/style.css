@@ -392,13 +392,12 @@ body {
     color: #c5c5c5;
     font-size: 12px;
     font-family: "HelveticaNeueCyr";
-    border-bottom: 2px solid transparent;
-    padding-top: 12px;
+    border-bottom: 3px solid transparent;
+    height: 25px;
 }
 
 .footer__item:hover {
-    border-bottom: 2px solid #f23005;
-    padding-top: 12px;
+    border-bottom: 3px solid #f23005;
 }
 
 @font-face {
