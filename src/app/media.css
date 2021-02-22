@@ -1,650 +1,599 @@
-            @media (min-width:1840px) {
-            .header__overlay {
-                width: 100%;
-                height: 100%;
-                background-image: url('img/header/pexels-photo(opacity).png');
-                background-size: cover;
-            }
-            .header {
-                display: flex;
-                background-image: url("img/header/pexels-photo.jpg");
-                width: 100%;
-                height: 1122px;
-                flex-direction: column;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .header {
-                display: flex;
-                background-image: url("img/header/pexels-photo.jpg");
-                width: 100%;
-                height: 882px;
-                flex-direction: column;
-                background-repeat: no-repeat;
-            }
-            .header__list {
-                display: flex;
-                width: 710px;
-                list-style: none;
-                height: fit-content;
-                margin-top: 76px;
-                margin-left: auto;
-                padding-left: 0;
-                margin-right: auto;
-            }
-            .header__header-block_welcome {
-                width: 600px;
-                flex-direction: column;
-                display: flex;
-                margin-top: 171px;
-                justify-content: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .header {
-                display: flex;
-                background-image: url("img/header/pexels-photo.jpg");
-                width: 100%;
-                height: 960px;
-                flex-direction: column;
-                background-repeat: no-repeat;
-            }
-            .header__list {
-                display: flex;
-                justify-content: space-around;
-                width: 710px;
-                list-style: none;
-                height: fit-content;
-                margin-top: 76px;
-                margin-left: 0;
-                padding-left: 0;
-            }
-        }
-        
-        @media (min-width: 320px) {
-            .header {
-                display: flex;
-                background-image: url('img/header/pexels-photo\ \(400\ x\ 1000\).jpg');
-                width: 100%;
-                flex-direction: column;
-                background-repeat: no-repeat;
-                height: 650px;
-            }
-            .header__list {
-                display: none;
-                justify-content: space-around;
-                width: 710px;
-                list-style: none;
-                height: fit-content;
-                margin-top: 76px;
-                margin-left: 0;
-                padding-left: 0;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .header__header-block_welcome {
-                font-size: 35px;
-                font-family: "HelveticaNeueCyr";
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                text-align: right;
-                -moz-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
-                -webkit-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
-                -ms-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
-                z-index: 14;
-                width: 400px;
-                flex-direction: column;
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 171px;
-                align-items: flex-end;
-            }
-        }
-        
-        @media (min-width: 320px) {
-            .header__header-block_welcome {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-left: 0;
-                margin-right: 0;
-                text-align: center;
-                margin-top: 40px;
-                height: auto;
-            }
-        }
-        
-        @media (min-width: 320px) {
-            .arrow-slider__block {
-                display: flex;
-                justify-content: space-between;
-                width: 50%;
-                margin-top: 40px;
-                order: 1;
-            }
-            .header__header-block_arrow-slider {
-                display: flex;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .header-block__welcome_text {
-                margin-bottom: 20px;
-                width: 333px;
-                font-size: 24px;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .header-block__welcome_text {
-                font-size: 23px;
-                width: 323px;
-            }
-        }
-        
-        @media (min-width: 320px) {
-            .header-block__welcome_text {
-                font-size: 17px;
-                margin-bottom: 20px;
-                display: flex;
-                width: 145px;
-                margin-top: 40px;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .header-block__welcome_block-text {
-                display: flex;
-                align-items: center;
-            }
-        }
-        
-        @media (min-width: 320px) {
-            .header-block__welcome_block-text {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 166px;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .header-block__welcome_freedom {
-                font-size: 60px;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .header-block__welcome_freedom {
-                font-size: 50px;
-            }
-            @media (min-width: 320px) {
-                .header-block__welcome_freedom {
-                    color: #f23005;
-                    font-size: 20px;
-                    margin-top: 0;
-                    font-family: "Myriad Pro";
-                    line-height: 0;
-                    height: auto;
-                    margin-right: 24px;
-                }
-            }
-            .header-block__welcome_music {
-                font-size: 80px;
-                margin: 0;
-                font-family: "Myriad Pro";
-                line-height: 0.8;
-            }
-            @media (min-width: 1024px) {
-                .header-block__welcome_music {
-                    font-size: 60px;
-                }
-            }
-            @media (min-width: 768px) {
-                .header-block__welcome_music {
-                    font-size: 50px;
-                    margin: 0;
-                    font-family: "Myriad Pro";
-                    line-height: 0.8;
-                }
-            }
-            @media (min-width: 320px) {
-                .header-block__welcome_music {
-                    font-size: 20px;
-                    margin: 0;
-                    font-family: "Myriad Pro";
-                    line-height: 0.8;
-                }
-            }
-            @media (min-width: 1024px) {
-                .header-block__information {
-                    font-size: 14px;
-                    font-family: "Myriad Pro";
-                    color: #8a8a8a;
-                    line-height: 1.2;
-                    width: 500px;
-                    z-index: 15;
-                    text-transform: none;
-                    margin: 0;
-                    margin-top: 25px;
-                    height: 100px;
-                    text-align: justify;
-                }
-            }
-            @media (min-width: 768px) {
-                .header-block__information {
-                    font-size: 14px;
-                    font-family: "Myriad Pro";
-                    color: #8a8a8a;
-                    line-height: 1.2;
-                    width: 370px;
-                    z-index: 15;
-                    text-transform: none;
-                    margin: 0;
-                    margin-top: 25px;
-                    height: 100px;
-                    text-align: justify;
-                }
-            }
-            @media (min-width: 320px) {
-                .header-block__information {
-                    font-size: 14px;
-                    display: none;
-                    font-family: "Myriad Pro";
-                    color: #8a8a8a;
-                    line-height: 1.2;
-                    width: 190px;
-                    z-index: 15;
-                    text-transform: none;
-                    margin: 0;
-                    margin-top: 25px;
-                    height: 100px;
-                    text-align: justify;
-                }
-            }
-            @media (min-width: 1024px) {
-                .header-block__block-links {
-                    display: flex;
-                    align-items: center;
-                    height: 48px;
-                    margin-left: auto;
-                    margin-top: 70px;
-                }
-            }
-            @media (min-width: 768px) {
-                .header-block__block-links {
-                    display: flex;
-                    align-items: center;
-                    height: 48px;
-                    margin-left: 0px;
-                    margin-top: 120px;
-                    width: 370px;
-                    justify-content: space-between;
-                }
-            }
-            @media (min-width: 320px) {
-                .header-block__block-links {
-                    display: flex;
-                    align-items: center;
-                    height: 48px;
-                    margin-left: 0;
-                    margin-top: 60px;
-                    flex-direction: column;
-                    order: 2;
-                }
-            }
-            @media (min-width: 320px) {
-                .header-block__link-start {
-                    margin-left: 0;
-                    margin-bottom: 30px;
-                }
-            }
-            @media (min-width: 320px) {
-                .header-block__link-learn {
-                    margin-left: 0;
-                }
-            }
-            @media (min-width: 1840px) {
-                .Block-about-us {
-                    display: flex;
-                    width: 100%;
-                    height: 710px;
-                    background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
-                }
-            }
-            @media (min-width: 1340px) {
-                .Block-about-us {
-                    display: flex;
-                    width: 100%;
-                    height: 710px;
-                    background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
-                }
-            }
-            @media (min-width: 1024px) {
-                .Block-about-us {
-                    display: flex;
-                    width: 100%;
-                    height: 1270px;
-                    background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
-                    flex-direction: column;
-                }
-            }
-            @media (min-width: 768px) {
-                .Block-about-us {
-                    display: flex;
-                    width: 100%;
-                    height: 1170px;
-                    background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
-                    flex-direction: column;
-                }
-            }
-            @media (min-width: 320px) {
-                .Block-about-us {
-                    display: flex;
-                    width: 100%;
-                    height: 1160px;
-                    background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
-                    flex-direction: column;
-                    margin-top: 0px;
-                    align-items: center;
-                }
-            }
-            @media (min-width: 1840px) {
-                .Block-about-us__left-block {
-                    margin-top: -75px;
-                    margin-left: 0px;
-                }
-            }
-            @media (min-width: 1340px) {
-                .Block-about-us__left-block {
-                    margin-top: -75px;
-                    margin-left: 0px;
-                }
-            }
-            @media (min-width: 1024px) {
-                .Block-about-us__left-block {
-                    margin-top: -75px;
-                    margin-left: 0px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-            @media (min-width: 768px) {
-                .Block-about-us__left-block {
-                    margin-top: -75px;
-                    margin-left: 0px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-            @media (min-width: 320px) {
-                .Block-about-us__left-block {
-                    margin-top: -70px;
-                    margin-left: 0px;
-                }
-            }
-            @media (min-width: 320px) {
-                .Block-characteristic {
-                    width: 250px;
-                    z-index: 39;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                }
-            }
-            @media (min-width: 1340px) {
-                .margin-top {
-                    margin-top: 0px;
-                }
-            }
-            @media (min-width: 320px) {
-                .margin-top {
-                    margin-top: 70px;
-                }
-            }
-            @media (min-width: 1340px) {
-                .Block-characteristic__description {
-                    width: 531.2px;
-                }
-            }
-            @media (min-width: 320px) {
-                .Block-characteristic__description {
-                    font-size: 14px;
-                    font-family: "HelveticaNeueCyr";
-                    color: rgb(255, 255, 255);
-                    line-height: 1.2;
-                    text-align: justify;
-                    -moz-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
-                    -webkit-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
-                    -ms-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
-                    width: auto;
-                    z-index: 40;
-                }
-            }
-            @media (min-width: 1840px) {
-                .Block-about-us__right-block {
-                    margin-top: -40px;
-                    margin-left: 188px;
-                }
-            }
-            @media (min-width: 1340px) {
-                .Block-about-us__right-block {
-                    margin-top: -40px;
-                    margin-left: 188px;
-                }
-            }
-            @media (min-width: 1024px) {
-                .Block-about-us__right-block {
-                    margin-top: 50px;
-                    margin-left: 10px;
-                }
-            }
-            @media (min-width: 768px) {
-                .Block-about-us__right-block {
-                    margin-top: 100px;
-                    margin-left: 0px;
-                }
-            }
-            @media (min-width: 320px) {
-                .Block-about-us__right-block {
-                    margin-top: 100px;
-                    margin-left: 0px;
-                }
-            }
-            @media (min-width: 1340px) {
-                .Block-about-us__right-block img {
-                    width: 100%;
-                }
-            }
-            @media (min-width: 768px) {
-                .statistical-block {
-                    position: relative;
-                    background-color: rgb(242, 48, 5);
-                }
-            }
-            @media (min-width: 320px) {
-                .statistical-block {
-                    position: relative;
-                    background-color: rgb(242, 48, 5);
-                    height: 1400px;
-                }
-            }
-            @media (min-width: 320px) {
-                .statistical-block__number {
-                    display: flex;
-                    width: 100%;
-                    height: 331px;
-                    z-index: 2;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                }
-            }
-            @media (min-width: 320px) {
-                .statistical-block__number_block {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            @media (min-width: 768px) {
-                .margin-left {
-                    margin-left: 20px
-                }
-            }
-            @media (min-width: 768px) {
-                .margin-right {
-                    margin-right: 20px
-                }
-            }
-            @media (min-width: 1024px) {
-                .number {
-                    font-size: 36pt;
-                    font-family: "Roboto";
-                    color: rgb(255, 255, 255);
-                    text-transform: uppercase;
-                    text-align: left;
-                    -moz-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
-                    -webkit-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
-                    -ms-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
-                    z-index: 56;
-                }
-            }
-            @media (min-width: 768px) {
-                .number {
-                    font-size: 50px;
-                    font-family: "Roboto";
-                    color: rgb(255, 255, 255);
-                    text-transform: uppercase;
-                    text-align: left;
-                }
-            }
-            @media (min-width: 1024px) {
-                .Guitar-block {
-                    display: flex;
-                    width: 100%;
-                    background-image: url(img/Guitar-block/background-guitar.jpg);
-                    z-index: 72;
-                    background-repeat: no-repeat;
-                    justify-content: center;
-                    align-items: center;
-                    background-position: right;
-                    height: 400px;
-                }
-            }
-            @media (min-width: 768px) {
-                .Guitar-block {
-                    display: flex;
-                    width: 100%;
-                    background-image: url(img/Guitar-block/background-guitar.jpg);
-                    z-index: 72;
-                    background-repeat: no-repeat;
-                    justify-content: center;
-                    align-items: center;
-                    background-position: right;
-                    height: 400px;
-                }
-            }
-            @media (min-width: 320px) {
-                .Guitar-block {
-                    display: flex;
-                    width: 100%;
-                    background-image: url(img/Guitar-block/background-guitar.jpg);
-                    height: 340px;
-                    z-index: 72;
-                    background-size: cover;
-                }
-            }
-            @media (min-width: 1024px) {
-                .Guitar-block__describe {
-                    display: flex;
-                    flex-direction: column;
-                    width: 580px;
-                    height: 167px;
-                    align-items: flex-end;
-                    margin-top: 0;
-                    margin-left: 0;
-                }
-            }
-            @media (min-width: 768px) {
-                .Guitar-block__describe {
-                    display: flex;
-                    flex-direction: column;
-                    width: 732px;
-                    height: 167px;
-                    align-items: center;
-                    margin-top: 0;
-                    margin-left: 0;
-                }
-            }
-            @media (min-width: 320px) {
-                .Guitar-block__describe {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    height: 167px;
-                    align-items: center;
-                    margin-left: 0;
-                    justify-content: center;
-                    margin-top: 90px;
-                }
-            }
-            @media (min-width: 768px) {
-                .Guitar-block__describe--header {
-                    font-family: "HelveticaNeueCyr";
-                    font-size: 24px;
-                    color: #ffffff;
-                    margin: 0;
-                }
-            }
-            @media (min-width: 768px) {
-                .Guitar-block__describe--text {
-                    font-size: 18px;
-                    font-family: "HelveticaNeueCyr";
-                    color: #929292;
-                    text-align: justify;
-                    margin: 0;
-                    margin-top: 33px;
-                    width: 580px;
-                }
-            }
-            @media (min-width:320px) {
-                .footer__list {
-                    display: flex;
-                    align-items: center;
-                    width: 584px;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-            }
-            @font-face {
-                font-family: "Myriad Pro";
-                src: url("fonts/8143.otf") format("truetype");
-                font-style: Regular;
-                font-weight: normal;
-            }
-            @font-face {
-                font-family: "Helvetica Neue Cyr";
-                src: url("fonts/Neue Cyr/helveticaneuecyr-thin.ttf") format("ttf"), url("fonts/Helvetica Neue Cyr/helveticaneuecyr-thin.woff2") format("woff2"), ;
-                font-style: thin;
-                font-weight: normal;
-            }
-            @font-face {
-                font-family: "Roboto";
-                src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-                font-style: regular;
-                font-weight: normal;
-            }
+                        @media (min-width:1840px) {
+                        .header__overlay {
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('img/header/pexels-photo(opacity).png');
+                            background-size: cover;
+                        }
+                        .header {
+                            display: flex;
+                            background-image: url("img/header/pexels-photo.jpg");
+                            width: 100%;
+                            height: 1122px;
+                            flex-direction: column;
+                        }
+                    }
+                    
+                    @media (min-width: 1024px) {
+                        .header {
+                            display: flex;
+                            background-image: url("img/header/pexels-photo.jpg");
+                            width: 100%;
+                            height: 882px;
+                            flex-direction: column;
+                            background-repeat: no-repeat;
+                        }
+                        .header__list {
+                            display: flex;
+                            width: 710px;
+                            list-style: none;
+                            height: fit-content;
+                            margin-top: 76px;
+                            margin-left: auto;
+                            padding-left: 0;
+                            margin-right: auto;
+                        }
+                        .header__header-block_welcome {
+                            width: 600px;
+                            flex-direction: column;
+                            display: flex;
+                            margin-top: 171px;
+                            justify-content: center;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .header-block__welcome_text {
+                            margin-bottom: 20px;
+                            width: 333px;
+                            font-size: 24px;
+                        }
+                        .header-block__welcome_block-text {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .header {
+                            display: flex;
+                            background-image: url("img/header/pexels-photo.jpg");
+                            width: 100%;
+                            height: 960px;
+                            flex-direction: column;
+                            background-repeat: no-repeat;
+                        }
+                        .header__list {
+                            display: flex;
+                            justify-content: space-around;
+                            width: 710px;
+                            list-style: none;
+                            height: fit-content;
+                            margin-top: 76px;
+                            margin-left: 0;
+                            padding-left: 0;
+                        }
+                        .header__header-block_welcome {
+                            font-size: 35px;
+                            font-family: "HelveticaNeueCyr";
+                            color: rgb(255, 255, 255);
+                            text-transform: uppercase;
+                            text-align: right;
+                            -moz-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+                            -webkit-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+                            -ms-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+                            z-index: 14;
+                            width: 400px;
+                            flex-direction: column;
+                            display: flex;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 171px;
+                            align-items: flex-end;
+                        }
+                        .header-block__welcome_text {
+                            font-size: 23px;
+                            width: 323px;
+                        }
+                    }
+                    
+                    @media (min-width: 320px) {
+                        .header {
+                            display: flex;
+                            background-image: url('img/header/pexels-photo\ \(400\ x\ 1000\).jpg');
+                            width: 100%;
+                            flex-direction: column;
+                            background-repeat: no-repeat;
+                            height: 650px;
+                        }
+                        .header__list {
+                            display: none;
+                            justify-content: space-around;
+                            width: 710px;
+                            list-style: none;
+                            height: fit-content;
+                            margin-top: 76px;
+                            margin-left: 0;
+                            padding-left: 0;
+                        }
+                        .header__header-block_welcome {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-left: 0;
+                            margin-right: 0;
+                            text-align: center;
+                            margin-top: 40px;
+                            height: auto;
+                        }
+                        .arrow-slider__block {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 50%;
+                            margin-top: 40px;
+                            order: 1;
+                        }
+                        .header__header-block_arrow-slider {
+                            display: flex;
+                        }
+                        .header-block__welcome_text {
+                            font-size: 17px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            width: 145px;
+                            margin-top: 40px;
+                        }
+                    }
+                    
+                    @media (min-width: 320px) {
+                        .header-block__welcome_block-text {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            width: 166px;
+                        }
+                    }
+                    
+                    @media (min-width: 1024px) {
+                        .header-block__welcome_freedom {
+                            font-size: 60px;
+                        }
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .header-block__welcome_freedom {
+                            font-size: 50px;
+                        }
+                        @media (min-width: 320px) {
+                            .header-block__welcome_freedom {
+                                color: #f23005;
+                                font-size: 20px;
+                                margin-top: 0;
+                                font-family: "Myriad Pro";
+                                line-height: 0;
+                                height: auto;
+                                margin-right: 24px;
+                            }
+                        }
+                        .header-block__welcome_music {
+                            font-size: 80px;
+                            margin: 0;
+                            font-family: "Myriad Pro";
+                            line-height: 0.8;
+                        }
+                        @media (min-width: 1024px) {
+                            .header-block__welcome_music {
+                                font-size: 60px;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .header-block__welcome_music {
+                                font-size: 50px;
+                                margin: 0;
+                                font-family: "Myriad Pro";
+                                line-height: 0.8;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .header-block__welcome_music {
+                                font-size: 20px;
+                                margin: 0;
+                                font-family: "Myriad Pro";
+                                line-height: 0.8;
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .header-block__information {
+                                font-size: 14px;
+                                font-family: "Myriad Pro";
+                                color: #8a8a8a;
+                                line-height: 1.2;
+                                width: 500px;
+                                z-index: 15;
+                                text-transform: none;
+                                margin: 0;
+                                margin-top: 25px;
+                                height: 100px;
+                                text-align: justify;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .header-block__information {
+                                font-size: 14px;
+                                font-family: "Myriad Pro";
+                                color: #8a8a8a;
+                                line-height: 1.2;
+                                width: 370px;
+                                z-index: 15;
+                                text-transform: none;
+                                margin: 0;
+                                margin-top: 25px;
+                                height: 100px;
+                                text-align: justify;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .header-block__information {
+                                font-size: 14px;
+                                display: none;
+                                font-family: "Myriad Pro";
+                                color: #8a8a8a;
+                                line-height: 1.2;
+                                width: 190px;
+                                z-index: 15;
+                                text-transform: none;
+                                margin: 0;
+                                margin-top: 25px;
+                                height: 100px;
+                                text-align: justify;
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .header-block__block-links {
+                                display: flex;
+                                align-items: center;
+                                height: 48px;
+                                margin-left: auto;
+                                margin-top: 70px;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .header-block__block-links {
+                                display: flex;
+                                align-items: center;
+                                height: 48px;
+                                margin-left: 0px;
+                                margin-top: 120px;
+                                width: 370px;
+                                justify-content: space-between;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .header-block__block-links {
+                                display: flex;
+                                align-items: center;
+                                height: 48px;
+                                margin-left: 0;
+                                margin-top: 60px;
+                                flex-direction: column;
+                                order: 2;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .header-block__link-start {
+                                margin-left: 0;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .header-block__link-learn {
+                                margin-left: 0;
+                            }
+                        }
+                        @media (min-width: 1840px) {
+                            .Block-about-us {
+                                display: flex;
+                                width: 100%;
+                                height: 710px;
+                                background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+                            }
+                        }
+                        @media (min-width: 1340px) {
+                            .Block-about-us {
+                                display: flex;
+                                width: 100%;
+                                height: 710px;
+                                background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .Block-about-us {
+                                display: flex;
+                                width: 100%;
+                                height: 1270px;
+                                background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+                                flex-direction: column;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .Block-about-us {
+                                display: flex;
+                                width: 100%;
+                                height: 1170px;
+                                background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+                                flex-direction: column;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .Block-about-us {
+                                display: flex;
+                                width: 100%;
+                                height: 1160px;
+                                background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+                                flex-direction: column;
+                                margin-top: 0px;
+                                align-items: center;
+                            }
+                        }
+                        @media (min-width: 1840px) {
+                            .Block-about-us__left-block {
+                                margin-top: -75px;
+                                margin-left: 0px;
+                            }
+                        }
+                        @media (min-width: 1340px) {
+                            .Block-about-us__left-block {
+                                margin-top: -75px;
+                                margin-left: 0px;
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .Block-about-us__left-block {
+                                margin-top: -75px;
+                                margin-left: 0px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .Block-about-us__left-block {
+                                margin-top: -75px;
+                                margin-left: 0px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .Block-about-us__left-block {
+                                margin-top: -70px;
+                                margin-left: 0px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .Block-characteristic {
+                                width: 250px;
+                                z-index: 39;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                            }
+                        }
+                        @media (min-width: 1340px) {
+                            .margin-top {
+                                margin-top: 0px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .margin-top {
+                                margin-top: 70px;
+                            }
+                        }
+                        @media (min-width: 1340px) {
+                            .Block-characteristic__description {
+                                width: 531.2px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .Block-characteristic__description {
+                                font-size: 14px;
+                                font-family: "HelveticaNeueCyr";
+                                color: rgb(255, 255, 255);
+                                line-height: 1.2;
+                                text-align: justify;
+                                -moz-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
+                                -webkit-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
+                                -ms-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
+                                width: auto;
+                                z-index: 40;
+                            }
+                        }
+                        @media (min-width: 1840px) {
+                            .Block-about-us__right-block {
+                                margin-top: -40px;
+                                margin-left: 188px;
+                            }
+                        }
+                        @media (min-width: 1340px) {
+                            .Block-about-us__right-block {
+                                margin-top: -40px;
+                                margin-left: 188px;
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .Block-about-us__right-block {
+                                margin-top: 50px;
+                                margin-left: 10px;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .Block-about-us__right-block {
+                                margin-top: 100px;
+                                margin-left: 0px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .Block-about-us__right-block {
+                                margin-top: 100px;
+                                margin-left: 0px;
+                            }
+                        }
+                        @media (min-width: 1340px) {
+                            .Block-about-us__right-block img {
+                                width: 100%;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .statistical-block {
+                                position: relative;
+                                background-color: rgb(242, 48, 5);
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .statistical-block {
+                                position: relative;
+                                background-color: rgb(242, 48, 5);
+                                height: 1400px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .statistical-block__number {
+                                display: flex;
+                                width: 100%;
+                                height: 331px;
+                                z-index: 2;
+                                justify-content: center;
+                                align-items: center;
+                                flex-wrap: wrap;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .statistical-block__number_block {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .margin-left {
+                                margin-left: 20px
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .margin-right {
+                                margin-right: 20px
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .number {
+                                font-size: 36pt;
+                                font-family: "Roboto";
+                                color: rgb(255, 255, 255);
+                                text-transform: uppercase;
+                                text-align: left;
+                                -moz-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+                                -webkit-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+                                -ms-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+                                z-index: 56;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .number {
+                                font-size: 50px;
+                                font-family: "Roboto";
+                                color: rgb(255, 255, 255);
+                                text-transform: uppercase;
+                                text-align: left;
+                            }
+                        }
+                        @media (min-width: 1024px) {
+                            .Guitar-block {
+                                display: flex;
+                                width: 100%;
+                                background-image: url(img/Guitar-block/background-guitar.jpg);
+                                z-index: 72;
+                                background-repeat: no-repeat;
+                                justify-content: center;
+                                align-items: center;
+                                background-position: right;
+                                height: 400px;
+                            }
+                            .Guitar-block__describe {
+                                display: flex;
+                                flex-direction: column;
+                                width: 580px;
+                                height: 167px;
+                                align-items: flex-end;
+                                margin-top: 0;
+                                margin-left: 0;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            .Guitar-block {
+                                display: flex;
+                                width: 100%;
+                                background-image: url(img/Guitar-block/background-guitar.jpg);
+                                z-index: 72;
+                                background-repeat: no-repeat;
+                                justify-content: center;
+                                align-items: center;
+                                background-position: right;
+                                height: 400px;
+                            }
+                            .Guitar-block__describe {
+                                display: flex;
+                                flex-direction: column;
+                                width: 732px;
+                                height: 167px;
+                                align-items: center;
+                                margin-top: 0;
+                                margin-left: 0;
+                            }
+                            .Guitar-block__describe--header {
+                                font-family: "HelveticaNeueCyr";
+                                font-size: 24px;
+                                color: #ffffff;
+                                margin: 0;
+                            }
+                            .Guitar-block__describe--text {
+                                font-size: 18px;
+                                font-family: "HelveticaNeueCyr";
+                                color: #929292;
+                                text-align: justify;
+                                margin: 0;
+                                margin-top: 33px;
+                                width: 580px;
+                            }
+                        }
+                        @media (min-width: 320px) {
+                            .Guitar-block {
+                                display: flex;
+                                width: 100%;
+                                background-image: url(img/Guitar-block/background-guitar.jpg);
+                                height: 340px;
+                                z-index: 72;
+                                background-size: cover;
+                            }
+                            .Guitar-block__describe {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: 167px;
+                                align-items: center;
+                                margin-left: 0;
+                                justify-content: center;
+                                margin-top: 90px;
+                            }
+                            .footer__list {
+                                display: flex;
+                                align-items: center;
+                                width: 584px;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                            }
+                        }

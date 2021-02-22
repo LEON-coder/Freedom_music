@@ -1,4 +1,24 @@
-    @import url(media.css);
+    @font-face {
+    font-family: "Myriad Pro";
+    src: url("fonts/8143.otf") format("truetype");
+    font-style: Regular;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: url("fonts/Neue Cyr/helveticaneuecyr-thin.ttf") format("ttf"), url("fonts/Helvetica Neue Cyr/helveticaneuecyr-thin.woff2") format("woff2"), ;
+    font-style: thin;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+    font-style: regular;
+    font-weight: normal;
+}
+
 body {
     margin: 0;
     font-family: "Helvetica Neue Cyr";
@@ -10,15 +30,6 @@ body {
     height: 100%;
     background-image: url('img/header/pexels-photo(opacity).png');
     background-size: cover;
-}
-
-@media (min-width: 1840px) {
-    .header__overlay {
-        width: 100%;
-        height: 100%;
-        background-image: url('img/header/pexels-photo(opacity).png');
-        background-size: cover;
-    }
 }
 
 .header {
@@ -144,8 +155,6 @@ body {
     height: 100px;
     text-align: justify;
 }
-
-.header-block__information_line-last {}
 
 .header-block__block-links {
     display: flex;
@@ -455,6 +464,15 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    .header-block__welcome_text {
+        margin-bottom: 20px;
+        width: 333px;
+        font-size: 24px;
+    }
+    .header-block__welcome_block-text {
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media (min-width: 768px) {
@@ -475,6 +493,28 @@ body {
         margin-top: 76px;
         margin-left: 0;
         padding-left: 0;
+    }
+    .header__header-block_welcome {
+        font-size: 35px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: right;
+        -moz-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+        -webkit-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+        -ms-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+        z-index: 14;
+        width: 400px;
+        flex-direction: column;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 171px;
+        align-items: flex-end;
+    }
+    .header-block__welcome_text {
+        font-size: 23px;
+        width: 323px;
     }
 }
 
@@ -497,30 +537,6 @@ body {
         margin-left: 0;
         padding-left: 0;
     }
-}
-
-@media (min-width: 768px) {
-    .header__header-block_welcome {
-        font-size: 35px;
-        font-family: "HelveticaNeueCyr";
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        text-align: right;
-        -moz-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
-        -webkit-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
-        -ms-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
-        z-index: 14;
-        width: 400px;
-        flex-direction: column;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 171px;
-        align-items: flex-end;
-    }
-}
-
-@media (min-width: 320px) {
     .header__header-block_welcome {
         width: 100%;
         display: flex;
@@ -532,9 +548,6 @@ body {
         margin-top: 40px;
         height: auto;
     }
-}
-
-@media (min-width: 320px) {
     .arrow-slider__block {
         display: flex;
         justify-content: space-between;
@@ -545,37 +558,12 @@ body {
     .header__header-block_arrow-slider {
         display: flex;
     }
-}
-
-@media (min-width: 1024px) {
-    .header-block__welcome_text {
-        margin-bottom: 20px;
-        width: 333px;
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 768px) {
-    .header-block__welcome_text {
-        font-size: 23px;
-        width: 323px;
-    }
-}
-
-@media (min-width: 320px) {
     .header-block__welcome_text {
         font-size: 17px;
         margin-bottom: 20px;
         display: flex;
         width: 145px;
         margin-top: 40px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .header-block__welcome_block-text {
-        display: flex;
-        align-items: center;
     }
 }
 
@@ -957,6 +945,15 @@ body {
             background-position: right;
             height: 400px;
         }
+        .Guitar-block__describe {
+            display: flex;
+            flex-direction: column;
+            width: 580px;
+            height: 167px;
+            align-items: flex-end;
+            margin-top: 0;
+            margin-left: 0;
+        }
     }
     @media (min-width: 768px) {
         .Guitar-block {
@@ -970,29 +967,6 @@ body {
             background-position: right;
             height: 400px;
         }
-    }
-    @media (min-width: 320px) {
-        .Guitar-block {
-            display: flex;
-            width: 100%;
-            background-image: url(img/Guitar-block/background-guitar.jpg);
-            height: 340px;
-            z-index: 72;
-            background-size: cover;
-        }
-    }
-    @media (min-width: 1024px) {
-        .Guitar-block__describe {
-            display: flex;
-            flex-direction: column;
-            width: 580px;
-            height: 167px;
-            align-items: flex-end;
-            margin-top: 0;
-            margin-left: 0;
-        }
-    }
-    @media (min-width: 768px) {
         .Guitar-block__describe {
             display: flex;
             flex-direction: column;
@@ -1002,28 +976,12 @@ body {
             margin-top: 0;
             margin-left: 0;
         }
-    }
-    @media (min-width: 320px) {
-        .Guitar-block__describe {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 167px;
-            align-items: center;
-            margin-left: 0;
-            justify-content: center;
-            margin-top: 90px;
-        }
-    }
-    @media (min-width: 768px) {
         .Guitar-block__describe--header {
             font-family: "HelveticaNeueCyr";
             font-size: 24px;
             color: #ffffff;
             margin: 0;
         }
-    }
-    @media (min-width: 768px) {
         .Guitar-block__describe--text {
             font-size: 18px;
             font-family: "HelveticaNeueCyr";
@@ -1034,7 +992,25 @@ body {
             width: 580px;
         }
     }
-    @media (min-width:320px) {
+    @media (min-width: 320px) {
+        .Guitar-block {
+            display: flex;
+            width: 100%;
+            background-image: url(img/Guitar-block/background-guitar.jpg);
+            height: 340px;
+            z-index: 72;
+            background-size: cover;
+        }
+        .Guitar-block__describe {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 167px;
+            align-items: center;
+            margin-left: 0;
+            justify-content: center;
+            margin-top: 90px;
+        }
         .footer__list {
             display: flex;
             align-items: center;
@@ -1042,40 +1018,4 @@ body {
             justify-content: center;
             flex-wrap: wrap;
         }
-    }
-    @font-face {
-        font-family: "Myriad Pro";
-        src: url("fonts/8143.otf") format("truetype");
-        font-style: Regular;
-        font-weight: normal;
-    }
-    @font-face {
-        font-family: "Helvetica Neue Cyr";
-        src: url("fonts/Neue Cyr/helveticaneuecyr-thin.ttf") format("ttf"), url("fonts/Helvetica Neue Cyr/helveticaneuecyr-thin.woff2") format("woff2"), ;
-        font-style: thin;
-        font-weight: normal;
-    }
-    @font-face {
-        font-family: "Roboto";
-        src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-        font-style: regular;
-        font-weight: normal;
-    }
-    @font-face {
-        font-family: "Myriad Pro";
-        src: url("fonts/8143.otf") format("truetype");
-        font-style: Regular;
-        font-weight: normal;
-    }
-    @font-face {
-        font-family: "Helvetica Neue Cyr";
-        src: url("fonts/Neue Cyr/helveticaneuecyr-thin.ttf") format("ttf"), url("fonts/Helvetica Neue Cyr/helveticaneuecyr-thin.woff2") format("woff2"), ;
-        font-style: thin;
-        font-weight: normal;
-    }
-    @font-face {
-        font-family: "Roboto";
-        src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-        font-style: regular;
-        font-weight: normal;
     }
