@@ -1,3 +1,25 @@
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("fonts/8143.otf") format("truetype");
+    font-style: Regular;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: url("fonts/Neue Cyr/helveticaneuecyr-thin.ttf") format("ttf"), url("fonts/Helvetica Neue Cyr/helveticaneuecyr-thin.woff2") format("woff2"), ;
+    font-style: thin;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+    font-style: regular;
+    font-weight: normal;
+}
+
 body {
     margin: 0;
     font-family: "Helvetica Neue Cyr";
@@ -345,58 +367,10 @@ body {
     text-align: justify;
 }
 
-@media (min-width: 1024px) {
-    .header-block__information {
-        font-size: 14px;
-        font-family: "Myriad Pro";
-        color: #8a8a8a;
-        line-height: 1.2;
-        width: 500px;
-        z-index: 15;
-        text-transform: none;
-        margin: 0;
-        margin-top: 25px;
-        height: 100px;
-        text-align: justify;
-    }
-}
-
-@media (min-width: 768px) {
-    .header-block__information {
-        font-size: 14px;
-        font-family: "Myriad Pro";
-        color: #8a8a8a;
-        line-height: 1.2;
-        width: 370px;
-        z-index: 15;
-        text-transform: none;
-        margin: 0;
-        margin-top: 25px;
-        height: 100px;
-        text-align: justify;
-    }
-}
-
-@media (min-width: 320px) {
-    .header-block__information {
-        font-size: 14px;
-        font-family: "Myriad Pro";
-        color: #8a8a8a;
-        line-height: 1.2;
-        width: 190px;
-        z-index: 15;
-        text-transform: none;
-        margin: 0;
-        margin-top: 25px;
-        height: 100px;
-        text-align: justify;
-    }
-}
 
 .header-block__block-links {
     display: flex;
     align-items: center;
-    height: 48px;
     margin-left: auto;
     margin-top: 38px;
 }
@@ -850,34 +824,6 @@ body {
     background-size: cover;
 }
 
-@media (min-width: 1024px) {
-    .Guitar-block {
-        display: flex;
-        width: 100%;
-        background-image: url(img/Guitar-block/background-guitar.jpg);
-        z-index: 72;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        background-position: right;
-        height: 400px;
-    }
-}
-
-@media (min-width: 768px) {
-    .Guitar-block {
-        display: flex;
-        width: 100%;
-        background-image: url(img/Guitar-block/background-guitar.jpg);
-        z-index: 72;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        background-position: right;
-        height: 400px;
-    }
-}
-
 .Guitar-block__describe {
     display: flex;
     flex-direction: column;
@@ -947,7 +893,7 @@ body {
     text-align: justify;
     margin: 0;
     margin-top: 33px;
-    width: 580px;
+    width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -1002,23 +948,848 @@ body {
     border-bottom: 3px solid #f23005;
 }
 
-@font-face {
-    font-family: "Myriad Pro";
-    src: url("fonts/8143.otf") format("truetype");
-    font-style: Regular;
-    font-weight: normal;
+
+/* Стили для мобильных устройств */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header {
+        display: flex;
+        background-image: url('img/header/pexels-photo\ \(400\ x\ 1000\).jpg');
+        width: 100%;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        height: 650px;
+    }
+    .header__overlay {
+        width: 100%;
+        height: 100%;
+        background-image: url('img/header/pexels-photo(opacity).png');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__list {
+        display: none;
+        justify-content: space-around;
+        width: 710px;
+        list-style: none;
+        height: fit-content;
+        margin-top: 76px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .header__header-block_welcome {
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        height: auto;
+        align-items: initial;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .arrow-slider__block {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 40px;
+        order: 1;
+        align-self: center;
+    }
+    .header__header-block_arrow-slider {
+        display: flex;
+    }
+    .header-block__welcome_text {
+        font-size: 17px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 145px;
+        margin-top: 40px;
+        align-self: center;
+        text-align: center;
+    }
+    .header-block__welcome_block-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 166px;
+        align-self: center;
+    }
+    .header-block__welcome_freedom {
+        color: #f23005;
+        font-size: 20px;
+        margin-top: 0;
+        font-family: "Myriad Pro";
+        line-height: 0;
+        height: auto;
+        margin-right: 24px;
+    }
+    .header-block__welcome_music {
+        font-size: 80px;
+        margin: 0;
+        font-family: "Myriad Pro";
+        line-height: 0.8;
+    }
+    .header-block__welcome_music {
+        font-size: 20px;
+        margin: 0;
+        font-family: "Myriad Pro";
+        line-height: 0.8;
+    }
+    .header-block__information {
+        font-size: 14px;
+        display: none;
+        font-family: "Myriad Pro";
+        color: #8a8a8a;
+        line-height: 1.2;
+        width: 190px;
+        z-index: 15;
+        text-transform: none;
+        margin: 0;
+        margin-top: 25px;
+        height: 100px;
+        text-align: justify;
+    }
+    .header-block__block-links {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 60px;
+        flex-direction: column;
+        order: 2;
+        align-self: center;
+    }
+    .header-block__link-start {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .header-block__link-learn {
+        margin-left: 0;
+    }
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 1160px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+    }
+    .Block-about-us__left-block {
+        margin-top: -70px;
+        margin-left: 0px;
+    }
+    .Block-characteristic {
+        width: 250px;
+        z-index: 39;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .margin-top {
+        margin-top: 180px;
+    }
+    .Block-characteristic__description {
+        font-size: 14px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: justify;
+        -moz-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
+        -webkit-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
+        -ms-transform: matrix( 1.00018648332197, 0, 0, 0.9984200575458, 0, 0);
+        width: auto;
+        z-index: 40;
+    }
+    .Block-about-us__right-block {
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    .Block-about-us__right-block img {
+        width: 80%;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    .statistical-block {
+        position: relative;
+        background-color: rgb(242, 48, 5);
+        height: 1400px;
+    }
+    .statistical-block__number {
+        display: flex;
+        width: 100%;
+        height: 331px;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .statistical-block__number_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .margin-left {
+        margin-left: 0;
+    }
+    .margin-right {
+        margin-right: 0;
+    }
+    .Guitar-block {
+        display: flex;
+        width: 100%;
+        background-image: url(img/Guitar-block/background-guitar.jpg);
+        height: 340px;
+        z-index: 72;
+        background-size: cover;
+    }
+    .Guitar-block__describe {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 167px;
+        align-items: center;
+        margin-left: 0;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .footer__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        margin-left: 0;
+    }
 }
 
-@font-face {
-    font-family: "Helvetica Neue Cyr";
-    src: url("fonts/Neue Cyr/helveticaneuecyr-thin.ttf") format("ttf"), url("fonts/Helvetica Neue Cyr/helveticaneuecyr-thin.woff2") format("woff2"), ;
-    font-style: thin;
-    font-weight: normal;
+
+/* Стили для планшетных устройств */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        display: flex;
+        background-image: url("img/header/pexels-photo.jpg");
+        width: 100%;
+        height: 960px;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+    .header__list {
+        display: flex;
+        justify-content: space-around;
+        width: 710px;
+        list-style: none;
+        height: fit-content;
+        margin-top: 76px;
+        margin-left: auto;
+        padding-left: inherit;
+        margin-right: auto;
+    }
+    .header__header-block_welcome {
+        font-size: 35px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: right;
+        -moz-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+        -webkit-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+        -ms-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
+        z-index: 14;
+        width: 370px;
+        flex-direction: column;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 171px;
+        align-items: flex-end;
+    }
+    .header-block__welcome_text {
+        font-size: 23px;
+        width: 323px;
+    }
+    .header-block__welcome_freedom {
+        font-size: 50px;
+    }
+    .header-block__welcome_music {
+        font-size: 50px;
+        margin: 0;
+        font-family: "Myriad Pro";
+        line-height: 0.8;
+    }
+    .header-block__information {
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: #8a8a8a;
+        line-height: 1.2;
+        width: 370px;
+        z-index: 15;
+        text-transform: none;
+        margin: 0;
+        margin-top: 25px;
+        height: 100px;
+        text-align: justify;
+    }
+    .header-block__block-links {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        margin-left: 0px;
+        margin-top: 120px;
+        width: 370px;
+        justify-content: space-between;
+    }
+    .header-block__link-start {
+        font-size: 11px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 5.371;
+        text-align: center;
+        width: 160px;
+        z-index: 23;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        z-index: 22;
+        text-decoration: none;
+        width: 160px;
+        height: 45px;
+        z-index: 18;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 0;
+    }
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 1300px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        flex-direction: column;
+    }
+    .Block-about-us__left-block {
+        margin-top: -75px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Block-about-us__right-block {
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    .Block-about-us__right-block img {
+        width: 80%;
+        margin-left: 80px;
+    }
+    .statistical-block {
+        position: relative;
+        background-color: rgb(242, 48, 5);
+    }
+    .margin-left {
+        margin-left: 0;
+    }
+    .margin-right {
+        margin-right: 0;
+    }
+    .number {
+        font-size: 50px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .Guitar-block {
+        display: flex;
+        width: 100%;
+        background-image: url(img/Guitar-block/background-guitar.jpg);
+        z-index: 72;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-position: right;
+        height: 400px;
+    }
+    .Guitar-block__describe {
+        display: flex;
+        flex-direction: column;
+        width: 732px;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .Guitar-block__describe--header {
+        font-family: "HelveticaNeueCyr";
+        font-size: 24px;
+        color: #ffffff;
+        margin: 0;
+    }
+    .Guitar-block__describe--text {
+        font-size: 18px;
+        font-family: "HelveticaNeueCyr";
+        color: #929292;
+        text-align: justify;
+        margin: 0;
+        margin-top: 33px;
+        width: 580px;
+    }
+    .footer {
+        display: flex;
+        height: 190px;
+        width: 100%;
+        background-color: #030303;
+        justify-content: center;
+    }
+    .footer__list {
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+        padding: 0;
+    }
+    .footer-margin-modifier {
+        margin-right: 0;
+    }
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-    font-style: regular;
-    font-weight: normal;
+
+/* Стили для планшетных устройств */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .header {
+        display: flex;
+        background-image: url("img/header/pexels-photo.jpg");
+        width: 100%;
+        height: 1060px;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+    .header__list {
+        display: flex;
+        width: 710px;
+        list-style: none;
+        height: fit-content;
+        margin-top: 76px;
+        margin-left: auto;
+        padding-left: 0;
+        margin-right: auto;
+    }
+    .header__header-block_welcome {
+        width: 500px;
+        flex-direction: column;
+        display: flex;
+        margin-top: 171px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arrow-slider__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .arrow-slider__block img {}
+    .header-block__welcome_text {
+        margin-bottom: 20px;
+        width: 429px;
+        font-size: 24px;
+        justify-content: space-between;
+    }
+    .header-block__welcome_block-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 503px;
+    }
+    .header-block__welcome_freedom {
+        font-size: 60px;
+    }
+    .header-block__welcome_music {
+        font-size: 60px;
+    }
+    .header-block__information {
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: #8a8a8a;
+        line-height: 1.2;
+        width: 500px;
+        z-index: 15;
+        text-transform: none;
+        margin: 0;
+        margin-top: 25px;
+        height: 100px;
+        text-align: justify;
+    }
+    .header-block__block-links {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        margin-left: 0;
+        margin-top: 70px;
+        width: 100%;
+        justify-content: center;
+    }
+    .header-block__link-start {
+        font-size: 11px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 5.371;
+        text-align: center;
+        width: 160px;
+        z-index: 23;
+        margin-left: 0;
+    }
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 1200px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        flex-direction: column;
+    }
+    .Block-about-us__left-block {
+        margin-top: -75px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Block-about-us__right-block {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .Block-about-us__right-block img {
+        width: 60%;
+        margin-left: 210px;
+    }
+    .number {
+        font-size: 36pt;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: left;
+        -moz-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+        -webkit-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+        -ms-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+        z-index: 56;
+    }
+    .margin-left {
+        margin-left: 0px;
+    }
+    .margin-right {
+        margin-right: 0;
+    }
+    .Guitar-block {
+        display: flex;
+        width: 100%;
+        background-image: url(img/Guitar-block/background-guitar.jpg);
+        z-index: 72;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-position: right;
+        height: 400px;
+    }
+    .Guitar-block__describe {
+        display: flex;
+        flex-direction: column;
+        width: 660px;
+        height: 167px;
+        align-items: flex-end;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .Guitar-block__describe--text {
+        font-size: 12px;
+        font-family: "HelveticaNeueCyr";
+        color: #929292;
+        text-align: justify;
+        margin: 0;
+        margin-top: 33px;
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        height: 190px;
+        width: 100%;
+        background-color: #030303;
+        justify-content: center;
+    }
+    .footer__list {
+        display: flex;
+        align-items: center;
+        width: 584px;
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+
+/* Стили для планшетных устройств */
+
+@media screen and (min-width: 1200px) and (max-width:1339px) {
+    .header {
+        display: flex;
+        background-image: url("img/header/pexels-photo.jpg");
+        width: 100%;
+        height: 1012px;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+    .header__list {
+        display: flex;
+        width: 710px;
+        list-style: none;
+        height: fit-content;
+        margin-top: 76px;
+        margin-left: auto;
+        padding-left: 0;
+        margin-right: auto;
+    }
+    .header__header-block_welcome {
+        width: 500px;
+        flex-direction: column;
+        display: flex;
+        margin-top: 171px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-block__welcome_text {
+        margin-bottom: 20px;
+        width: 340px;
+        font-size: 24px;
+    }
+    .header-block__welcome_block-text {
+        display: flex;
+        align-items: center;
+    }
+    .header-block__welcome_freedom {
+        font-size: 60px;
+    }
+    .header-block__welcome_music {
+        font-size: 60px;
+    }
+    .arrow-slider__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .header-block__information {
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: #8a8a8a;
+        line-height: 1.2;
+        width: 500px;
+        z-index: 15;
+        text-transform: none;
+        margin: 0;
+        margin-top: 25px;
+        height: 100px;
+        text-align: justify;
+    }
+    .header-block__block-links {
+        display: flex;
+        height: 48px;
+        margin-left: 0;
+        margin-top: 70px;
+        width: 60%;
+        justify-content: space-between;
+    }
+    .header-block__link-start {
+        font-size: 11px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 5.371;
+        text-align: center;
+        width: 160px;
+        z-index: 23;
+        margin-left: 0;
+    }
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 1330px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        flex-direction: column;
+    }
+    .Block-about-us__left-block {
+        margin-top: -75px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Block-about-us__right-block {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .Block-about-us__right-block img {
+        width: 60%;
+        margin-left: 190px;
+    }
+    .number {
+        font-size: 36pt;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: left;
+        -moz-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+        -webkit-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+        -ms-transform: matrix( 1.000339453788, 0, 0, 0.99905392620624, 0, 0);
+        z-index: 56;
+    }
+    .statistical-block__number {
+        display: flex;
+        background-color: rgb(242, 48, 5);
+        width: 100%;
+        height: 331px;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+    }
+    .margin-left {
+        margin-left: 0;
+    }
+    .margin-right {
+        margin-right: 0;
+    }
+    .Guitar-block {
+        display: flex;
+        width: 100%;
+        background-image: url(img/Guitar-block/background-guitar.jpg);
+        z-index: 72;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-position: right;
+        height: 400px;
+    }
+    .Guitar-block__describe {
+        display: flex;
+        flex-direction: column;
+        width: 580px;
+        height: 167px;
+        align-items: flex-end;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .Guitar-block__describe--text {
+        font-size: 12px;
+        font-family: "HelveticaNeueCyr";
+        color: #929292;
+        text-align: justify;
+        margin: 0;
+        margin-top: 33px;
+        width: 100%;
+    }
+    .footer {
+        height: 190px;
+        width: 100%;
+        background-color: #030303;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__list {
+        display: flex;
+        align-items: center;
+        width: 584px;
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+
+/* Стили для десктопа */
+
+@media screen and (min-width: 1340px) and (max-width: 1669px) {
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 710px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+    }
+    .Block-about-us__left-block {
+        margin-top: -75px;
+        margin-left: 0px;
+    }
+    .margin-top {
+        margin-top: 0px;
+    }
+    .Block-characteristic__description {
+        width: 531.2px;
+    }
+    .Block-about-us__right-block {
+        margin-top: -40px;
+        margin-left: 108px;
+    }
+    .Block-about-us__right-block img {
+        width: 100%;
+    }
+    .margin-left {
+        margin-left: 0;
+    }
+    .margin-right {
+        margin-right: 0;
+    }
+    .footer {
+        display: flex;
+        height: 190px;
+        width: 100%;
+        background-color: #030303;
+        justify-content: center;
+    }
+    .footer__list {
+        display: flex;
+        align-items: center;
+        width: 584px;
+        margin-left: 0;
+    }
+}
+
+
+/* Стили для десктопа */
+
+@media screen and (min-width:1840px) and (max-width: 2056px) {
+    .header__overlay {
+        width: 100%;
+        height: 100%;
+        background-image: url('img/header/pexels-photo(opacity).png');
+        background-size: cover;
+    }
+    .header {
+        display: flex;
+        background-image: url("img/header/pexels-photo.jpg");
+        width: 100%;
+        height: 1122px;
+        flex-direction: column;
+    }
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 710px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+    }
+    .Block-about-us__left-block {
+        margin-top: -75px;
+        margin-left: 0px;
+    }
+    .Block-about-us__right-block {
+        margin-top: -40px;
+        margin-left: 188px;
+    }
 }
