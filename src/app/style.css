@@ -427,7 +427,7 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
     .header {
         display: flex;
-        background-image: url('img/header/pexels-photo\ \(400\ x\ 1000\).jpg');
+        background-image: url('img/header/pexels-photo (mobile) (500 x 800).jpg');
         width: 100%;
         flex-direction: column;
         background-repeat: no-repeat;
@@ -554,9 +554,13 @@ body {
     .Block-about-us__left-block {
         margin-top: -70px;
         margin-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .Block-characteristic {
-        width: 250px;
+        width: 90%;
         z-index: 39;
         display: flex;
         flex-direction: column;
@@ -648,7 +652,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .header {
         display: flex;
-        background-image: url("img/header/pexels-photo.jpg");
+        background-image: url("img/header/pexels-photo (mobile) (768 x 800).jpg");
         width: 100%;
         height: 960px;
         flex-direction: column;
@@ -840,7 +844,7 @@ body {
 @media (min-width: 1024px) and (max-width: 1199px) {
     .header {
         display: flex;
-        background-image: url("img/header/pexels-photo.jpg");
+        background-image: url("img/header/pexels-photo\ \(mobile\)\ \(1024\ x\ 800\).jpg");
         width: 100%;
         height: 1060px;
         flex-direction: column;
@@ -1014,7 +1018,7 @@ body {
 @media screen and (min-width: 1200px) and (max-width:1339px) {
     .header {
         display: flex;
-        background-image: url("img/header/pexels-photo.jpg");
+        background-image: url("img/header/pexels-photo\ \(mobile\)\ \(1200\ x\ 800\).jpg");
         width: 100%;
         height: 1012px;
         flex-direction: column;
@@ -1264,5 +1268,104 @@ body {
     .Block-about-us__right-block {
         margin-top: -40px;
         margin-left: 188px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .header__overlay {
+        width: 100%;
+        height: 100%;
+        background-image: url('img/header/pexels-photo(opacity).png');
+        background-size: cover;
+    }
+    .header {
+        display: flex;
+        background-image: url("img/header/pexels-photo.jpg");
+        width: 100%;
+        height: 1122px;
+        flex-direction: column;
+    }
+    .header__list {
+        display: flex;
+        justify-content: space-around;
+        width: 920px;
+        list-style: none;
+        height: fit-content;
+        margin-top: 76px;
+        margin-left: 132px;
+        padding-left: 0;
+    }
+    .header__item {
+        font-size: 22px;
+        font-family: "HelveticaNeueCyr";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        -moz-transform: matrix( 0.99983585068949, 0, 0, 1.03568848432307, 0, 0);
+        -webkit-transform: matrix( 0.99983585068949, 0, 0, 1.03568848432307, 0, 0);
+        -ms-transform: matrix( 0.99983585068949, 0, 0, 1.03568848432307, 0, 0);
+        z-index: 31;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    .Block-about-us {
+        display: flex;
+        width: 100%;
+        height: 710px;
+        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        justify-content: center;
+    }
+    .Block-about-us__left-block {
+        margin-top: -75px;
+        margin-left: 0px;
+    }
+    .Block-about-us__right-block {
+        margin-top: -40px;
+        margin-left: 188px;
+    }
+    .Guitar-block {
+        display: flex;
+        width: 100%;
+        background-image: url(img/Guitar-block/background-guitar.jpg);
+        height: 647px;
+        z-index: 72;
+        background-size: cover;
+    }
+    .Guitar-block__describe {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 167px;
+        align-items: flex-end;
+        margin-top: 246px;
+        margin-left: 227px;
+    }
+    .Guitar-block__describe--header {
+        font-size: 36px;
+    }
+    .Guitar-block__describe--text {
+        font-size: 22px;
+        font-family: "HelveticaNeueCyr";
+        color: #929292;
+        text-align: justify;
+        margin: 0;
+        margin-top: 33px;
+        width: 100%;
+    }
+    .footer {
+        justify-content: center;
+    }
+    .footer__list {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .footer__item {
+        color: #c5c5c5;
+        font-size: 22px;
+        font-family: "HelveticaNeueCyr";
+        border-bottom: 3px solid transparent;
+        height: 25px;
     }
 }
