@@ -75,6 +75,7 @@ body {
     border-bottom: 2px solid rgb(242, 48, 5);
     padding-bottom: 10px;
     transition: 0.4s width linear;
+    padding-bottom: 10px;
 }
 
 .header__header-block {
@@ -422,7 +423,7 @@ body {
 }
 
 
-/* Стили для мобильных устройств */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¼Ð¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
 
 @media (min-width: 320px) and (max-width: 767px) {
     .header {
@@ -647,7 +648,7 @@ body {
 }
 
 
-/* Стили для планшетных устройств */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .header {
@@ -839,7 +840,7 @@ body {
 }
 
 
-/* Стили для планшетных устройств */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
 
 @media (min-width: 1024px) and (max-width: 1199px) {
     .header {
@@ -1013,7 +1014,7 @@ body {
 }
 
 
-/* Стили для планшетных устройств */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
 
 @media screen and (min-width: 1200px) and (max-width:1339px) {
     .header {
@@ -1191,7 +1192,7 @@ body {
 }
 
 
-/* Стили для десктопа */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð´ÐµÑÐºÑ‚Ð¾Ð¿Ð° */
 
 @media screen and (min-width: 1340px) and (max-width: 1669px) {
     .Block-about-us {
@@ -1239,7 +1240,7 @@ body {
 }
 
 
-/* Стили для десктопа */
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð´ÐµÑÐºÑ‚Ð¾Ð¿Ð° */
 
 @media screen and (min-width:1840px) and (max-width: 2056px) {
     .header__overlay {
@@ -1260,6 +1261,7 @@ body {
         width: 100%;
         height: 710px;
         background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        justify-content: space-between;
     }
     .Block-about-us__left-block {
         margin-top: -75px;
