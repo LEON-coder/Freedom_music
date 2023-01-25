@@ -61,21 +61,19 @@ body {
     font-family: "HelveticaNeueCyr";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    line-height: 1.2;
+    border-bottom: 2px solid transparent;line-height: 1.2;
     text-align: center;
     -moz-transform: matrix( 0.99983585068949, 0, 0, 1.03568848432307, 0, 0);
     -webkit-transform: matrix( 0.99983585068949, 0, 0, 1.03568848432307, 0, 0);
     -ms-transform: matrix( 0.99983585068949, 0, 0, 1.03568848432307, 0, 0);
     z-index: 31;
+    height: 25px;
     text-decoration: none;
-    padding-bottom: 10px;
-}
+transition: all;}
 
 .header__item:hover {
     border-bottom: 2px solid rgb(242, 48, 5);
-    padding-bottom: 10px;
-    transition: 0.4s width linear;
-    padding-bottom: 10px;
+    transition: 0.5s;
 }
 
 .header__header-block {
@@ -287,6 +285,24 @@ body {
 
 .statistical-block {
     position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.wave {
+    background: rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: wave .5s linear;
+    pointer-events: none;
+    position: absolute;
+}
+
+@keyframes wave {
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 .statistical-block__number {
@@ -315,6 +331,10 @@ body {
     align-items: center;
     width: 270px;
     height: 100%;
+    cursor: pointer;
+    transition: background .25s;
+    position: relative;
+    overflow: hidden;
 }
 
 .margin-left {
@@ -327,6 +347,10 @@ body {
 
 .statistical-block__number_block:hover {
     background-color: #c42400;
+}
+
+.statistical-block__number_block:hover .wave {
+    display: flex;
 }
 
 .statistical-block__number--describe {
@@ -364,16 +388,16 @@ body {
     height: 647px;
     z-index: 72;
     background-size: cover;
-}
+justify-content: center;align-items: center;}
 
 .Guitar-block__describe {
     display: flex;
     flex-direction: column;
     width: 732px;
     height: 167px;
-    align-items: flex-end;
-    margin-top: 246px;
-    margin-left: 227px;
+    
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .Guitar-block__describe--header {
@@ -398,13 +422,16 @@ body {
     height: 190px;
     width: 100%;
     background-color: #030303;
+    justify-content: center;
 }
 
 .footer__list {
     display: flex;
     align-items: center;
     width: 584px;
-    margin-left: 553px;
+    margin-left: 0;
+    justify-content: center;
+    padding-left: 0;
 }
 
 .footer__item {
@@ -414,16 +441,16 @@ body {
     color: #c5c5c5;
     font-size: 12px;
     font-family: "HelveticaNeueCyr";
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     height: 25px;
 }
 
 .footer__item:hover {
-    border-bottom: 3px solid #f23005;
-}
+    border-bottom: 2px solid #f23005;
+transition: .5s;}
 
 
-/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¼Ð¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
+/* ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ ÃÂ´ÃÂ»Ã‘Â ÃÂ¼ÃÂ¾ÃÂ±ÃÂ¸ÃÂ»Ã‘Å’ÃÂ½Ã‘â€¹Ã‘â€¦ Ã‘Æ’Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ÃÂ¹Ã‘ÂÃ‘â€šÃÂ² */
 
 @media (min-width: 320px) and (max-width: 767px) {
     .header {
@@ -592,51 +619,54 @@ body {
         margin-left: 30px;
     }
     .statistical-block {
-        position: relative;
-        background-color: rgb(242, 48, 5);
-        height: 1400px;
-    }
-    .statistical-block__number {
-        display: flex;
-        width: 100%;
-        height: 331px;
-        z-index: 2;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .statistical-block__number_block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
+    position: relative;
+    height: auto;
+}
+
+.statistical-block__number {
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+   .statistical-block__number_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(242, 48, 5);
+}
+
     .margin-left {
-        margin-left: 0;
-    }
+    margin-left: 0;
+    height: 50%;
+}
     .margin-right {
         margin-right: 0;
     }
-    .Guitar-block {
-        display: flex;
-        width: 100%;
-        background-image: url(img/Guitar-block/background-guitar.jpg);
-        height: 340px;
-        z-index: 72;
-        background-size: cover;
-    }
-    .Guitar-block__describe {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 167px;
-        align-items: center;
-        margin-left: 0;
-        justify-content: center;
-        margin-top: 90px;
-    }
+.Guitar-block {
+    display: flex;
+    width: 100%;
+    background-image: url(img/Guitar-block/background-guitar.jpg);
+    height: 340px;
+    z-index: 72;
+    background-size: cover;
+    margin-top: 330px;
+}
+   .Guitar-block__describe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 167px;
+    align-items: center;
+    margin-left: 0;
+    justify-content: center;
+}
     .footer__list {
         display: flex;
         align-items: center;
@@ -648,7 +678,7 @@ body {
 }
 
 
-/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
+/* ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ ÃÂ´ÃÂ»Ã‘Â ÃÂ¿ÃÂ»ÃÂ°ÃÂ½Ã‘Ë†ÃÂµÃ‘â€šÃÂ½Ã‘â€¹Ã‘â€¦ Ã‘Æ’Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ÃÂ¹Ã‘ÂÃ‘â€šÃÂ² */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .header {
@@ -840,7 +870,7 @@ body {
 }
 
 
-/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
+/* ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ ÃÂ´ÃÂ»Ã‘Â ÃÂ¿ÃÂ»ÃÂ°ÃÂ½Ã‘Ë†ÃÂµÃ‘â€šÃÂ½Ã‘â€¹Ã‘â€¦ Ã‘Æ’Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ÃÂ¹Ã‘ÂÃ‘â€šÃÂ² */
 
 @media (min-width: 1024px) and (max-width: 1199px) {
     .header {
@@ -1014,7 +1044,7 @@ body {
 }
 
 
-/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² */
+/* ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ ÃÂ´ÃÂ»Ã‘Â ÃÂ¿ÃÂ»ÃÂ°ÃÂ½Ã‘Ë†ÃÂµÃ‘â€šÃÂ½Ã‘â€¹Ã‘â€¦ Ã‘Æ’Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ÃÂ¹Ã‘ÂÃ‘â€šÃÂ² */
 
 @media screen and (min-width: 1200px) and (max-width:1339px) {
     .header {
@@ -1192,7 +1222,7 @@ body {
 }
 
 
-/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð´ÐµÑÐºÑ‚Ð¾Ð¿Ð° */
+/* ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ ÃÂ´ÃÂ»Ã‘Â ÃÂ´ÃÂµÃ‘ÂÃÂºÃ‘â€šÃÂ¾ÃÂ¿ÃÂ° */
 
 @media screen and (min-width: 1340px) and (max-width: 1669px) {
     .Block-about-us {
@@ -1240,7 +1270,7 @@ body {
 }
 
 
-/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð´ÐµÑÐºÑ‚Ð¾Ð¿Ð° */
+/* ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ ÃÂ´ÃÂ»Ã‘Â ÃÂ´ÃÂµÃ‘ÂÃÂºÃ‘â€šÃÂ¾ÃÂ¿ÃÂ° */
 
 @media screen and (min-width:1840px) and (max-width: 2056px) {
     .header__overlay {
