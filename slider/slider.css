@@ -331,12 +331,46 @@ h2 {
     width: 20%;
 }
 
+@media screen and (max-width: 1024px) {
+	#slides {
+		width: 100%;
+		display: flex;
+		background: #fff;
+		/* background: rgb(252,255,244); */
+		background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
+		/* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
+		background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+		background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+		background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
+		height: auto;
+	}
+	}
+
+
+@media screen and (max-width: 768px) {
+#slides {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    /* background: rgb(252,255,244); */
+    background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
+    /* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
+    background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+    background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
+    height: auto;
+}
+}
+
 
 
 @media screen and (max-width: 425px) {
 
-	#slider #active {
-		display: flex;
+	#slider #active {		
 		margin: 55px auto;
 	}
 
@@ -352,21 +386,6 @@ h2 {
 		width: 100%;
 	}
 
-	#slides {
-        width: 100%;
-        display: flex;
-        height: 403px;
-        background: #fff;
-        /* background: rgb(252,255,244); */
-        background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
-        /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
-        /* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
-        background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-        background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-        background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
-    }
-
 	#slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3), #slide3:checked ~ #controls label:nth-child(4), #slide4:checked ~ #controls label:nth-child(1) {
 		background: url(../slider/arrow-right.png) no-repeat;
 		float: right;
@@ -379,6 +398,18 @@ h2 {
 		float: left;
 		margin: -60px 0 0 50px;
 		display: none;
+	}
+
+	#controls {
+		height: 50px;
+		display: flex;
+		width: 40%;
+	}
+	#slides article {
+		float: left;
+		margin-right: 0;
+		margin-left: 0px;
+		width: 20%;
 	}
 
 	.slide-content {
@@ -433,20 +464,7 @@ h2 {
 		margin-left: 0;
 	}
 
-	#slides {
-		width: 100%;
-		display: flex;
-		height: 403px;
-		background: #fff;
-		/* background: rgb(252,255,244); */
-		background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
-		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
-		/* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
-		background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-		background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-		background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
-	}
+	
 
 #slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
     background: url(../slider/arrow-left.png) no-repeat;
@@ -473,10 +491,10 @@ h2 {
 }
 
 #slider #active {
-	margin: 30px auto;
-	display: flex;
-	width: 86px;
-	justify-content: space-between;
+    margin: 30px auto;
+    display: none;
+    width: 86px;
+    justify-content: space-between;
 }
 
 #slide1:checked ~ #active label:nth-child(1), #slide2:checked ~ #active label:nth-child(2), #slide3:checked ~ #active label:nth-child(3), #slide4:checked ~ #active label:nth-child(4) {
@@ -526,10 +544,10 @@ h2 {
 
 @media screen and (max-width:320px) {
 
-
 	#slider {
 		margin: 0 auto;
 		width: 100%;
+		height: auto;
 	}
 
 	#slider #controls {
@@ -539,10 +557,7 @@ h2 {
 		display: none;
 	}
 
-	#slider #active {
-		margin: 23% 0 0;
-	}
-
+	
 	#slider #slides .info {
 		opacity: 0 !important;
 	}
@@ -562,7 +577,7 @@ h2 {
 	#slides {
 		width: 100%;
 		display: flex;
-		height: 403px;
+		height: auto;
 		background: #fff;
 		/* background: rgb(252,255,244); */
 		background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
@@ -572,6 +587,11 @@ h2 {
 		background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
 		background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
+	}
+
+	#slides article {
+		float: left;
+		width: 20%;
 	}
 
 #slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
@@ -600,7 +620,7 @@ h2 {
 
 #slider #active {
     margin: 20px auto;
-    display: flex;
+    display: none;
     width: 86px;
     justify-content: space-between;
 }
