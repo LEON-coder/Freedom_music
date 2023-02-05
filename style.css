@@ -25,22 +25,41 @@ body {
     margin: 0;
     font-family: "Helvetica Neue Cyr";
     font-family: "Myriad Pro";
+    background-color: #030303;
 }
 
 .header__overlay {
     width: 100%;
-    height: 100%;
-    background-image: url('img/header/pexels-photo(opacity).png');
+    height: 100%;    
     background-size: cover;
 }
 
 .header {
-    display: flex;
-    background-image: url("img/header/pexels-photo.jpg");
+    display: flex;    
     width: 100%;
     height: 1122px;
     flex-direction: column;
     background-size: cover;
+}
+
+.first--back {
+    background-image: url("./img/header/pexels-photo.jpg");
+}
+
+.second--back {
+    background-image: url("./img/header/m1000x1000.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third--back {
+    background-image: url("./img/header/thirth--back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourth--back {
+    background-image: url("./img/header/Creative-I-love-music_1920x1200.jpg");
 }
 
 .header__list {
@@ -100,10 +119,15 @@ transition: all;}
     margin-left: 110px;
     margin-top: 171px;
     align-items: flex-end;
+    position: relative;
 }
 
 .header__header-block_arrow-slider {
     display: flex;
+}
+
+.slide-4-modify {
+    width: 10%;
 }
 
 .header-block__welcome_text {
@@ -116,9 +140,11 @@ transition: all;}
     -ms-transform: matrix( 1.33193485736128, 0, 0, 1.33715556553054, 0, 0);
     z-index: 14;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     width: 373px;
+    height: auto;
+    margin-top: 30px;
 }
 
 .header-block__welcome_block-text {
@@ -154,7 +180,6 @@ transition: all;}
     margin: 0;
     margin-top: 25px;
     height: 100px;
-    text-align: justify;
 }
 
 .header-block__block-links {
@@ -213,12 +238,19 @@ transition: all;}
     display: flex;
     width: 100%;
     height: 710px;
-    background-image: url('img/Block_about_us/new_vector_shape_done.jpg');
+    box-shadow: #030303 0px -200px 230px;
+    z-index: 7;
+    position: relative;
 }
 
 .Block-about-us__left-block {
     margin-top: -75px;
-    margin-left: 201px;
+    margin-left: 320px;
+}
+
+.Block-about-us__right-block {
+    margin-top: -40px;
+    z-index: 8;
 }
 
 .Block-characteristic {
@@ -278,9 +310,11 @@ transition: all;}
     z-index: 40;
 }
 
-.Block-about-us__right-block {
-    margin-left: 45px;
-    margin-top: -40px;
+.statistical-block {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    z-index: 8;
 }
 
 .statistical-block {
@@ -384,20 +418,20 @@ transition: all;}
 .Guitar-block {
     display: flex;
     width: 100%;
-    background-image: url('img/Guitar-block/background-guitar.jpg');
+    background-image: url(img/Guitar-block/background-guitar.jpg);
     height: 647px;
-    z-index: 72;
     background-size: cover;
-justify-content: center;align-items: center;}
+    align-items: center;
+}
 
 .Guitar-block__describe {
     display: flex;
     flex-direction: column;
     width: 732px;
     height: 167px;
-    
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 180px;
+    align-items: end;
 }
 
 .Guitar-block__describe--header {
@@ -1280,8 +1314,7 @@ transition: .5s;}
         background-size: cover;
     }
     .header {
-        display: flex;
-        background-image: url("img/header/pexels-photo.jpg");
+        display: flex;        
         width: 100%;
         height: 1122px;
         flex-direction: column;
@@ -1289,30 +1322,19 @@ transition: .5s;}
     .Block-about-us {
         display: flex;
         width: 100%;
-        height: 710px;
-        background-image: url(img/Block_about_us/new_vector_shape_done.jpg);
+        height: 710px;        
         justify-content: space-between;
-    }
-    .Block-about-us__left-block {
-        margin-top: -75px;
-        margin-left: 100px;
-    }
-    .Block-about-us__right-block {
-        margin-top: -40px;
-        margin-left: 188px;
-    }
+    }    
 }
 
 @media screen and (min-width:2560px) {
     .header__overlay {
         width: 100%;
-        height: 100%;
-        background-image: url('img/header/pexels-photo(opacity).png');
+        height: 100%;        
         background-size: cover;
     }
     .header {
-        display: flex;
-        background-image: url("img/header/pexels-photo.jpg");
+        display: flex;        
         width: 100%;
         height: 1122px;
         flex-direction: column;
